@@ -38,4 +38,5 @@
 ### Insert Code
 1. The model and migration is done, create your views and controllers.
 <br>
+
 2. Ask me if got any problem in installing, because I might miss things in this doc.
