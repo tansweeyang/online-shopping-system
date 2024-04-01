@@ -11,7 +11,7 @@
     npm install bootstrap
     npm install slick-carousel
     npm install nouislider
-    npm install @fortawesome fontawesome-free
+    npm install @fontawesome fontawesome-free
     ```
 
 3. Compile css.
