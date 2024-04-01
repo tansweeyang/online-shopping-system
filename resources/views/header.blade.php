@@ -147,9 +147,8 @@
                     <li><a href="#"><i class="fa fa-inr"></i> INR</a></li>
                     <li>
                         @if (session()->has('uid'))
-                            <?php
-                            $user = DB::table('user_info')->select('first_name')->where('user_id', session('uid'))->first();
-                            ?>
+                            {{ $user = UserInfo::where('user_id', session('uid'))->first(['first_name']); }}
+
                             <div class="dropdownn">
                                 <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal"><i
                                         class="fa fa-user-o"></i> HI {{ $user->first_name }}</a>
