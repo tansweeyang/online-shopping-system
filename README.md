@@ -40,3 +40,15 @@
 <br>
 
 2. Ask me if got any problem in installing, because I might miss things in this doc.
+
+### Push Your Code to New Branch
+1. Create a branch
+    ```bash
+    git checkout -b branch_name
+    ```
+    <br>
+
+2. Add, commit and push
+    ```bash
+    git push –u origin branch_name
+    ```
