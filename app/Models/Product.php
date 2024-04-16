@@ -22,4 +22,10 @@ class Product extends Model
     protected $guarded = [
         'product_id',
     ];
+
+    // Define the relationship to the Category model
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'product_cat', 'cat_id');
+    }
 }
