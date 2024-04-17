@@ -28,4 +28,8 @@ Route::get('/logout', function () {
     return view('hello');
 });
 
+Route::get('/cart', function () {
+    return view('cart');
+});
+
 

@@ -77,23 +77,20 @@
 
         {{-- SECTION --}}
         <div class="section mainn mainn-raised">
-
-
             {{-- container --}}
             <div class="container">
-
                 {{-- row --}}
                 <div class="row">
                     {{-- shop --}}
                     <div class="col-md-4 col-xs-6">
-                        <a href="product.php?p=78">
+                        <a href="{{ url('product?p=78') }}">
                             <div class="shop">
                                 <div class="shop-img">
-                                    <img src="./img/shop01.png" alt="">
+                                    <img src="{{ asset('img/shop01.png') }}" alt="">
                                 </div>
                                 <div class="shop-body">
                                     <h3>Laptop<br>Collection</h3>
-                                    <a href="product.php?p=78" class="cta-btn">Shop now <i
+                                    <a href="{{ url('product?p=78') }}" class="cta-btn">Shop now <i
                                             class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
@@ -103,14 +100,14 @@
 
                     {{-- shop --}}
                     <div class="col-md-4 col-xs-6">
-                        <a href="product.php?p=72">
+                        <a href="{{ url('product?p=72') }}">
                             <div class="shop">
                                 <div class="shop-img">
-                                    <img src="./img/shop03.png" alt="">
+                                    <img src="{{ asset('img/shop03.png') }}" alt="">
                                 </div>
                                 <div class="shop-body">
                                     <h3>Accessories<br>Collection</h3>
-                                    <a href="product.php?p=72" class="cta-btn">Shop now <i
+                                    <a href="{{ url('product?p=72') }}" class="cta-btn">Shop now <i
                                             class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
@@ -120,14 +117,14 @@
 
                     {{-- shop --}}
                     <div class="col-md-4 col-xs-6">
-                        <a href="product.php?p=79">
+                        <a href="{{ url('product?p=79') }}">
                             <div class="shop">
                                 <div class="shop-img">
-                                    <img src="./img/shop02.png" alt="">
+                                    <img src="{{ asset('img/shop02.png') }}" alt="">
                                 </div>
                                 <div class="shop-body">
                                     <h3>Cameras<br>Collection</h3>
-                                    <a href="product.php?p=79" class="cta-btn">Shop now <i
+                                    <a href="{{ url('product?p=79') }}" class="cta-btn">Shop now <i
                                             class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
@@ -135,12 +132,11 @@
                     </div>
                     {{-- /shop --}}
                 </div>
-                {{-- /row  --}}
+                {{-- /row --}}
             </div>
             {{-- /container --}}
         </div>
-        {{--  SECTION  --}}
-
+        {{-- SECTION --}}
 
         {{-- /SECTION --}}
         <div class="section">
@@ -174,8 +170,7 @@
                                     <div class="products-slick" data-nav="#slick-nav-1">
                                         @foreach ($new_products as $new_product)
                                             <div class="product">
-                                                <a
-                                                    href="{{ url('/product/' . $new_product->product_id) }}">{{ $new_product->product_title }}</a>
+                                                <a href="{{ url('/product/' . $new_product->product_id) }}">
                                                 <div class="product-img">
                                                     <img src="{{ asset('product_images/' . $new_product->product_image) }}"
                                                         style="max-height: 170px;" alt="">
@@ -186,7 +181,8 @@
                                                 </div>
                                                 </a>
                                                 <div class="product-body">
-                                                    <p class="product-category">{{ $new_product->category->title }}</p>
+                                                    <p class="product-category">{{ $new_product->category->title }}
+                                                    </p>
                                                     <h3 class="product-name header-cart-item-name"> <a
                                                             href="{{ url('/product/' . $new_product->id) }}">{{ $new_product->name }}</a>
                                                     </h3>

@@ -17,9 +17,4 @@ class ProductController extends Controller
             'top_selling_products' => $top_selling_products
         ]);
     }
-
-    public function show()
-    {
-        return view('hello');
-    }
 }

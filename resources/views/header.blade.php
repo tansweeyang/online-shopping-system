@@ -30,15 +30,18 @@
     <link type="text/css" rel="stylesheet" href="css/accountbtn.css" />
 
 
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 
 
     {{--  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->  --}}
+
+    <!--[if lt IE 9]>  --}}
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    {{--  <![endif]-->  --}}
 
     <style>
         #navigation {
@@ -147,7 +150,7 @@
                     <li><a href="#"><i class="fa fa-inr"></i> INR</a></li>
                     <li>
                         @if (session()->has('uid'))
-                            {{ $user = UserInfo::where('user_id', session('uid'))->first(['first_name']); }}
+                            {{ $user = UserInfo::where('user_id', session('uid'))->first(['first_name']) }}
 
                             <div class="dropdownn">
                                 <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal"><i
@@ -244,7 +247,7 @@
                                     </div>
 
                                     <div class="cart-btns">
-                                        <a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i> edit
+                                        <a href="{{ url('cart') }}" style="width:100%;"><i class="fa fa-edit"></i> edit
                                             cart</a>
 
                                     </div>
@@ -271,6 +274,7 @@
         </div>
         <!-- /MAIN HEADER -->
     </header>
+
     <!-- /HEADER -->
     <nav id='navigation'>
         <!-- container -->
