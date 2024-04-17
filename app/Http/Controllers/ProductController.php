@@ -17,4 +17,14 @@ class ProductController extends Controller
             'top_selling_products' => $top_selling_products
         ]);
     }
+
+    public function viewProduct($id) {
+        $product = Product::where('product_id', $id)->firstOrFail();
+        $relatedProducts = Product::where('product_id', '>', $id)->limit(3)->get();
+
+        return view('product', [
+            'product' => $product,
+            'relatedProducts'=> $relatedProducts
+        ]);
+    }
 }

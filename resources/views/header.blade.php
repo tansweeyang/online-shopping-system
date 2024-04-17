@@ -13,34 +13,29 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" />
 
     <!-- Slick -->
-    <link type="text/css" rel="stylesheet" href="css/slick.css" />
-    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="/css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="/css/slick-theme.css" />
 
     <!-- nouislider -->
-    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/nouislider.min.css" />
 
     <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="css/accountbtn.css" />
-
-
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-
-
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="/css/accountbtn.css" />
 
     {{--  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
     <!--[if lt IE 9]>  --}}
-
+    {{--  
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>  --}}
     {{--  <![endif]-->  --}}
 
     <style>
@@ -56,20 +51,15 @@
         }
 
         #header {
-
             background: #780206;
             /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #061161, #780206);
             /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #061161, #780206);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
         }
 
         #top-header {
-
-
             background: #870000;
             /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #190A05, #870000);
@@ -247,7 +237,8 @@
                                     </div>
 
                                     <div class="cart-btns">
-                                        <a href="{{ url('cart') }}" style="width:100%;"><i class="fa fa-edit"></i> edit
+                                        <a href="{{ url('cart') }}" style="width:100%;"><i class="fa fa-edit"></i>
+                                            edit
                                             cart</a>
 
                                     </div>

@@ -184,7 +184,7 @@
                                                     <p class="product-category">{{ $new_product->category->title }}
                                                     </p>
                                                     <h3 class="product-name header-cart-item-name"> <a
-                                                            href="{{ url('/product/' . $new_product->id) }}">{{ $new_product->name }}</a>
+                                                            href="{{ url('/product/' . $new_product->product_id) }}">{{ $new_product->name }}</a>
                                                     </h3>
                                                     <h4 class="product-price header-cart-item-info">
                                                         {{ $new_product->price }}<del
@@ -209,7 +209,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="add-to-cart">
-                                                    <button pid="{{ $new_product->id }}" id="product"
+                                                    <button pid="{{ $new_product->product_id }}" id="product"
                                                         class="add-to-cart-btn block2-btn-towishlist"
                                                         href="#"><i class="fa fa-shopping-cart"></i> add to
                                                         cart</button>

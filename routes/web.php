@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ProductController::class,'index']);
 
-Route::get('/product/{id}', function () {
-    return view('hello');
-});
+Route::get('/product/{id}', [ProductController::class,'viewProduct']);
 
 Route::get('/admin/login', function () {
     return view('hello');
@@ -31,5 +29,4 @@ Route::get('/logout', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
-
 
